@@ -22,9 +22,7 @@ namespace EseGPO_PrezzoEquilibrio_SortiAndrea5IC
         {
             try
             {
-                // =====================
-                // LETTURA INPUT
-                // =====================
+                // LETTURA IN INPUT
                 double domA = double.Parse(txtDomA.Text);
                 double domB = double.Parse(txtDomB.Text);
 
@@ -33,9 +31,7 @@ namespace EseGPO_PrezzoEquilibrio_SortiAndrea5IC
 
                 double maxQ = double.Parse(txtMaxQ.Text);
 
-                // =====================
                 // PULIZIE
-                // =====================
                 dgvValori.Rows.Clear();
                 GraficoRisultati.Series.Clear();
                 GraficoRisultati.ChartAreas.Clear();
@@ -67,11 +63,9 @@ namespace EseGPO_PrezzoEquilibrio_SortiAndrea5IC
                 double equilibrioP = -1;
                 double minDiff = double.MaxValue;
 
-                double step = 0.001; // passo 0.001 per calcolo e tabella (3 decimali)
+                double step = 0.001; // passo 0.001 x calcolo e tabella (con 3 decimali)
 
-                // =====================
                 // CALCOLO E POPOLAMENTO TABELLA + GRAFICO GENERALE
-                // =====================
                 for (double q = 0; q <= maxQ; q += step)
                 {
                     double domanda = domA - domB * q;
@@ -94,13 +88,11 @@ namespace EseGPO_PrezzoEquilibrio_SortiAndrea5IC
                     }
                 }
 
-                // =====================
                 // GRAFICO DETTAGLIATO INTORNO AL PUNTO DI EQUILIBRIO
-                // =====================
                 if (equilibrioQ >= 0)
                 {
-                    double range = 0.05;       // intervallo intorno all'equilibrio
-                    double stepDettaglio = 0.001; // passo fine 3 decimali
+                    double range = 0.05;    // intervallo intorno all'equilibrio
+                    double stepDettaglio = 0.001;   // passo fine 3 decimali
 
                     Series sDomEq = new Series("Domanda Dettaglio");
                     sDomEq.ChartType = SeriesChartType.Line;
@@ -124,9 +116,7 @@ namespace EseGPO_PrezzoEquilibrio_SortiAndrea5IC
                     GraficoRisultati.Series.Add(sDomEq);
                     GraficoRisultati.Series.Add(sOffEq);
 
-                    // =====================
                     // PUNTO DI EQUILIBRIO
-                    // =====================
                     Series sEq = new Series("Equilibrio");
                     sEq.ChartType = SeriesChartType.Point;
                     sEq.MarkerStyle = MarkerStyle.Circle;
@@ -144,9 +134,7 @@ namespace EseGPO_PrezzoEquilibrio_SortiAndrea5IC
                     sLinea.Points.AddXY(equilibrioQ, equilibrioP + 20);
                     GraficoRisultati.Series.Add(sLinea);
 
-                    // =====================
-                    // AGGIORNA LABEL SUL FORM
-                    // =====================
+                    // AGGIORNA LABEL FORM
                     lblEquilibrioQ.Text = $"Q equilibrio = {equilibrioQ:0.000}";
                     lblEquilibrioP.Text = $"Prezzo equilibrio = {equilibrioP:0.000}";
                 }

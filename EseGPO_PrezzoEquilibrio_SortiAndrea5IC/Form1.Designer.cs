@@ -46,65 +46,70 @@
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 17);
+            this.label1.Size = new System.Drawing.Size(79, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Domanda A:";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(249, 84);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(275, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Domanda B:";
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 20);
+            this.label3.Size = new System.Drawing.Size(65, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Offerta A:";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(249, 123);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(275, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 20);
+            this.label4.Size = new System.Drawing.Size(66, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Offerta B:";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(485, 123);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(538, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 20);
+            this.label5.Size = new System.Drawing.Size(53, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Max Q:";
             // 
             // lblEquilibrioQ
             // 
-            this.lblEquilibrioQ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblEquilibrioQ.Location = new System.Drawing.Point(735, 120);
+            this.lblEquilibrioQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquilibrioQ.Location = new System.Drawing.Point(789, 120);
             this.lblEquilibrioQ.Name = "lblEquilibrioQ";
-            this.lblEquilibrioQ.Size = new System.Drawing.Size(187, 23);
+            this.lblEquilibrioQ.Size = new System.Drawing.Size(148, 23);
             this.lblEquilibrioQ.TabIndex = 14;
             this.lblEquilibrioQ.Text = "Q equilibrio = ";
             // 
             // lblEquilibrioP
             // 
-            this.lblEquilibrioP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblEquilibrioP.Location = new System.Drawing.Point(928, 120);
+            this.lblEquilibrioP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquilibrioP.Location = new System.Drawing.Point(958, 121);
             this.lblEquilibrioP.Name = "lblEquilibrioP";
-            this.lblEquilibrioP.Size = new System.Drawing.Size(205, 23);
+            this.lblEquilibrioP.Size = new System.Drawing.Size(175, 23);
             this.lblEquilibrioP.TabIndex = 15;
             this.lblEquilibrioP.Text = "Prezzo equilibrio = ";
             // 
             // txtDomA
             // 
-            this.txtDomA.Location = new System.Drawing.Point(84, 84);
+            this.txtDomA.Location = new System.Drawing.Point(97, 86);
             this.txtDomA.Name = "txtDomA";
             this.txtDomA.Size = new System.Drawing.Size(146, 20);
             this.txtDomA.TabIndex = 6;
@@ -112,31 +117,31 @@
             // 
             // txtDomB
             // 
-            this.txtDomB.Location = new System.Drawing.Point(321, 84);
+            this.txtDomB.Location = new System.Drawing.Point(360, 89);
             this.txtDomB.Name = "txtDomB";
-            this.txtDomB.Size = new System.Drawing.Size(146, 20);
+            this.txtDomB.Size = new System.Drawing.Size(145, 20);
             this.txtDomB.TabIndex = 7;
             this.txtDomB.Text = "4";
             // 
             // txtOffA
             // 
-            this.txtOffA.Location = new System.Drawing.Point(73, 123);
+            this.txtOffA.Location = new System.Drawing.Point(83, 123);
             this.txtOffA.Name = "txtOffA";
-            this.txtOffA.Size = new System.Drawing.Size(157, 20);
+            this.txtOffA.Size = new System.Drawing.Size(160, 20);
             this.txtOffA.TabIndex = 8;
             this.txtOffA.Text = "10";
             // 
             // txtOffB
             // 
-            this.txtOffB.Location = new System.Drawing.Point(310, 120);
+            this.txtOffB.Location = new System.Drawing.Point(345, 124);
             this.txtOffB.Name = "txtOffB";
-            this.txtOffB.Size = new System.Drawing.Size(157, 20);
+            this.txtOffB.Size = new System.Drawing.Size(160, 20);
             this.txtOffB.TabIndex = 9;
             this.txtOffB.Text = "100";
             // 
             // txtMaxQ
             // 
-            this.txtMaxQ.Location = new System.Drawing.Point(535, 120);
+            this.txtMaxQ.Location = new System.Drawing.Point(597, 122);
             this.txtMaxQ.Name = "txtMaxQ";
             this.txtMaxQ.Size = new System.Drawing.Size(168, 20);
             this.txtMaxQ.TabIndex = 10;
@@ -144,11 +149,13 @@
             // 
             // btnCalcola
             // 
+            this.btnCalcola.BackColor = System.Drawing.Color.Transparent;
             this.btnCalcola.Location = new System.Drawing.Point(15, 149);
             this.btnCalcola.Name = "btnCalcola";
             this.btnCalcola.Size = new System.Drawing.Size(1118, 80);
             this.btnCalcola.TabIndex = 11;
             this.btnCalcola.Text = "Calcola e Disegna";
+            this.btnCalcola.UseVisualStyleBackColor = false;
             this.btnCalcola.Click += new System.EventHandler(this.btnCalcola_Click);
             // 
             // dgvValori
@@ -193,7 +200,7 @@
             // 
             // Form1
             // 
-            this.BackColor = System.Drawing.Color.Coral;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1156, 553);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
